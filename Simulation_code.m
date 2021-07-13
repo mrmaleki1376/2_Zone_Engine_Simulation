@@ -60,7 +60,7 @@ hold on;
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Sec.5 Calculating Unburned/Burned Area,Mass,Temperture,Volume & Motoring Pressure,Pressure, and Work
+%% Sec.5 Calculating Unburned/Burned Area,Mass,Temperature,Volume & Motoring Pressure,Pressure, and Work
 %preparing Variables
  D_qw(1:360)=zeros;
  D_qw2(1:360)=zeros;
@@ -105,7 +105,7 @@ Up=2*Ne*s; % mean piston speed
 P_atm = 101000; %atm Pressure
 P_BDC = P_atm;
 AF_ratio_ac=1.3*14.6;
-T_BDC=300; %Temperture
+T_BDC=300; %Temperature
 T(1) = T_BDC; 
 IVC = -131; %intake valve close
 EVO = 125; %exhaust valve open
@@ -324,7 +324,7 @@ hold on;
 plot(theta_0*ones(size(y_T)),y_T*1000,'-.','linewidth',0.9,'color',[0.85 0.85 0.4]);
 hold on;
 plot(theta_f*ones(size(y_T)),y_T*1000,'-.','linewidth',0.9,'color',[0.85 0.85 0.4]);
-title('\it Temperture(\bf\theta\circ)','fontsize',18,'color',[1 1 0]);
+title('\it Temperature(\bf\theta\circ)','fontsize',18,'color',[1 1 0]);
 set(gca,'color',[0.5 0.5 0.5],'Xlim',[-180 180],'Xcolor',[1 1 0],'Ylim',[0 3000],'Ycolor',[1 1 0],'fontsize',11,'linewidth',2);
 set(gcf,'color',[0 0 0])
 xlabel('\it Crank Angle \bf\theta\circ','fontsize', 11, 'color',[1 1 0]);
